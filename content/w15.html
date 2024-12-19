@@ -167,6 +167,18 @@ print(result)</pre>
 result = add_only_even(1, 100)
 print(f"從 1 累加到 100 的偶數總和是: {result}")
 </pre>
+<p><a href="https://expert-invention-pjp97qrgv59rf6w99-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/8ab30a60eca1465142fb7b69f79f20e7/raw/28f43628cff0ed90706f9ae007bfe12c80470693/w15.4">add_avoid_8</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def add_avoid_8(start, end):  # 定義函式，接受兩個參數：start 和 end
+    total = 0  # 設定總和變數，初始為 0
+    for i in range(start, end + 1):  # 從 start 到 end (包括 end)
+        if '8' not in str(i):  # 檢查數字是否包含 8
+            total += i  # 累加不包含 8 的數字
+    return total  # 回傳總和
+
+# 測試函式，從 1 到 100 累加不包含數字 8 的數字
+result = add_avoid_8(1, 100)
+print(f"從 1 累加到 100 且避開包含 8 的數字的總和是: {result}")
+</pre>
 <p></p><br />w13_hw << <a href='w13_hw.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
         
     <!-- footer -->
