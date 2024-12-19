@@ -329,10 +329,10 @@ ctx.stroke()
 </script>
 </p>
 <h3>w15</h3>
-<p><a href="https://literate-broccoli-r4pw7vgr9v94cp7rr-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/40fc15fd73151da2a67c9dbb00b6c788/raw/7d37867aa60b8e1061ba76041a328029dc68860e/w11">從 1 累加到 100</a></p>
+<p><a href="https://expert-invention-pjp97qrgv59rf6w99-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/c24ea5cd14c1483a9b94b70705d0ea8a/raw/0e0829dab3b7c8c4a1ad4aa8376f46bb9b1de952/w15.1">從 1 累加到 100</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">total = sum(range(1,101))
 print(total)</pre>
-<p><a href="https://literate-broccoli-r4pw7vgr9v94cp7rr-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/3f48f8a214d25a1c87309aee16b19372/raw/d8a1578d40bae4c7c6c866336301e227d879d9df/w15.2">addto</a></p>
+<p><a href="https://expert-invention-pjp97qrgv59rf6w99-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/bc56cee5dca666f63bcb119ded555f9f/raw/e4a4fab247363be988606890f5d7c6d5228f6cbe/w15.2">addto</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def addto(start, end):#定義addto的函數
     total = 0 #總共是未知數
     for i in range(start, end+1): #從初始數相加到末數加1
@@ -342,7 +342,19 @@ print(total)</pre>
 result = addto(1,100)
 print(result)</pre>
 <p><br/><br/></p>
-<p><a href="https://literate-broccoli-r4pw7vgr9v94cp7rr-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/d951a5ac1d96212a986308e4264a0a8c/raw/15f07c534ce22709ea3120f631e09cd152cedf92/w15.3">add_only_even</a></p><h1>HW 2</h1>
+<p><a href="https://literate-broccoli-r4pw7vgr9v94cp7rr-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323123/d951a5ac1d96212a986308e4264a0a8c/raw/15f07c534ce22709ea3120f631e09cd152cedf92/w15.3">add_only_even</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def add_only_even(start, end):  # 定義函式，接受兩個參數：start 和 end
+    total = 0  # 設定總和變數，初始為 0
+    for i in range(start, end + 1):  # 從 start 到 end (包括 end)
+        if i % 2 == 0:  # 檢查是否為偶數
+            total += i  # 累加偶數
+    return total  # 回傳總和
+
+# 測試函式，從 1 到 100 累加偶數
+result = add_only_even(1, 100)
+print(f"從 1 累加到 100 的偶數總和是: {result}")
+</pre>
+<p></p><h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">Python 課程教材: <a href="https://www.learnpythonwithjupyter.com/">https://www.learnpythonwithjupyter.com/</a> - PART 2 and Part 3</p>
 <hr/>
