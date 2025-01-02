@@ -141,40 +141,12 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w11_hw << <a href='w11_hw.html'>Previous</a> <a href='w15.html'>Next</a> >> w15<br /><h1>w13_hw</h1>
-<!-- 導入 brython 程式庫 -->
-<p>
-<script src="./../cmsimde/static/brython.js"></script>
-<script src="./../cmsimde/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
-}
-</script>
-</p>
-<div id="brython_div1"></div>
-<p>
-<script type="text/python3">
-from browser import html
-from browser import document as doc
-# 利用 html 建立 canvas 超文件物件
-canvas = html.CANVAS(width=400, height=400)
-brython_div = doc["brython_div1"]
-brython_div <= canvas
-ctx = canvas.getContext("2d")
-
-ctx.lineWidth = 1
-ctx.strokeStyle = 'blue'  
-ctx.beginPath()
-ctx.moveTo(10, 10)
-ctx.lineTo(210, 210)
-ctx.stroke()
-</script>
-</p>
-<br />w11_hw << <a href='w11_hw.html'>Previous</a> <a href='w15.html'>Next</a> >> w15</div>
+    <div id="tipue_search_content">HW 1 Exam << <a href='HW 1 Exam.html'>Previous</a> <a href='w10.html'>Next</a> >> w10<br /><h1>w7</h1>
+<p>利用 ShareX拍攝畫面,學習brython程式print及for迴圈的練習</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">a="我已經會寫簡單的python程式了"
+for i in range(1,11):
+    print(i,a)</pre>
+<p><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2NXJockBTdc" width="560"></iframe></p><br />HW 1 Exam << <a href='HW 1 Exam.html'>Previous</a> <a href='w10.html'>Next</a> >> w10</div>
         
     <!-- footer -->
       <div class="container">
